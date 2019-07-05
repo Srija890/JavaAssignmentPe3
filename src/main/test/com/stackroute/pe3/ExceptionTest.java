@@ -23,37 +23,35 @@ public class ExceptionTest {
     }
 
     @Test
-    public void ArithmeticException() { //Not asked in P.e 3
-
+    public void givenInputShouldReturnArithmeticException() {
 
         //act
         String result = exception.ArithmeticException(3, 0);
-
         //assert
         assertEquals("Can't divide a number by 0", result);//checking expected and actual values
     }
 
     @Test
-    public void NegativeArraySizeException() {
+    public void givenInputShouldReturnNegativeArraySizeException() {
         String result = exception.NegativeArraySizeException(-8);
         assertEquals("Can't create array of negative size", result);//checking expected and actual values
     }
 
 
     @Test
-    public void NullPointerException() {
+    public void givenInputShouldReturnNullPointerException() {
         String result = exception.NullPointerException(0);
         assertEquals("NullPointerException..", result);//checking expected and actual values
     }
 
     @Test
-    public void ArrayIndexOutOfBound() {
+    public void givenInputShouldReturnArrayIndexOutOfBound() {
         String result = exception.ArrayIndexOutOfBound(9);
         assertEquals("Wrong index number, please enter correct number. ", result);//checking expected and actual values
     }
 
     @Test
-    public void StringIndexOutOfBoundsException() {
+    public void givenInputShouldReturnIndexOutOfBoundsException() {
         String result = exception.StringIndexOutOfBoundsException(5);
         assertEquals("Wrong character index number, please enter correct number. ", result);//checking expected and actual values
     }

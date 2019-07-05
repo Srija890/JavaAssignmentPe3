@@ -1,6 +1,6 @@
 package com.stackroute.pe3;
 
-public class Exception {
+public class Exception extends Throwable {
     public String ArithmeticException(int a, int b) {
         try {
             int c = a / b;  // cannot divide by zero

@@ -11,18 +11,15 @@ public class StringArrayTest {
 
     @Before
     public void setUp() {
-        //arrange
         stringArray = new StringArray();
     }
 
     @After
     public void tearDown() {
-        //arrange
         stringArray= null;
     }
     @Test
-
-    public  void compareTest()
+    public  void givenInputStringShouldReturnNotEqual()
     {
         String[] str1={"8","A","39"};
         String[] str2={"8","B","39"};
@@ -46,12 +43,5 @@ public class StringArrayTest {
         assertArrayEquals(str,stringArray.isAppen(str1,str2));//checking expected and actual values
     }
 
-    @Test
-    public void prependMid()
-    {
-        String[] str1={"10","20","30"};
-        String[] str2={"50","60","70"};
-        String[] str={"60","10","20","30"};
-        assertArrayEquals(str,stringArray.isPrepen(str1,str2));//checking expected and actual values
-    }
+
 }

@@ -10,34 +10,31 @@ public class AverageMarksTest {
     AverageMarks averageMarks=new AverageMarks();
     @Before
     public void setUp() {
-        //arrange
         averageMarks= new AverageMarks();
     }
 
     @After
     public void tearDown() {
-        //arrange
         averageMarks = null;
     }
 
-    public void inBetweenZeroAndHundred()
+    public void givenInputShouldReturnBetweenZeroAndHundred()
     {
         String z=averageMarks.computeMarksEqual(20);
         assertEquals("true",z);//checking expected and actual values
     }
     @Test
-    public void greaterThan()
+    public void givenInputShouldNotReturnGreaterThanHundred()
     {
         String z=averageMarks.computeMarksGreater(121);
         assertEquals("Input should not be greater than 100",z);//checking expected and actual values
     }
     @Test
-    public void lessThanZero()
+    public void givenInputShouldNotReturnLessThanZero()
     {
         String z=averageMarks.computeMarksLess(-5);
         assertEquals("Input should not be less than 0",z);//checking expected and actual values
     }
-
 
 }
 
