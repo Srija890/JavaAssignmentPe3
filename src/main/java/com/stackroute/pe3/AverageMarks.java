@@ -1,6 +1,6 @@
 package com.stackroute.pe3;
 
-public class AverageMarks
+public class StudentMarks
 {
     public String computeMarksEqual(int marks)
     {
